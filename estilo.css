@@ -1,0 +1,825 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seccion INICIO */
+
+#inicio {
+    background: linear-gradient(
+        rgba(0, 0, 0, .7),
+        rgba(0, 0, 0, .7)
+    ), url("img/fondo-inicio.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #BE87C1;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #BE87C1;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: #BE87C1;
+}
+
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #BE87C1;
+}
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 45px;
+    color: #BE87C1;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #BE87C1;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+
+/* Seccion SOBRE MI */
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+    align-items: center;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 500px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #BE87C1;
+}
+
+#sobremi .sobremi {
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #1F0F59;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+    color: #BE87C1;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    font-size: 13px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#sobremi .sobremi a:hover {
+    background-color: #BE87C1;
+    color: #fff;
+}
+
+/* Seccion HABILIDADES */
+
+#habilidades {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #BE87C1;
+}
+
+#habilidades .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #1F0F59;
+    text-decoration-thickness: 5px;
+}
+
+#habilidades .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#habilidades .fila .habilidad {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#habilidades .fila .habilidad:hover {
+    box-shadow:
+        5px 5px 10px #1F0F59,
+        -5px -5px 10px #BE87C1;
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .habilidad h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .habilidad .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F5D2E1;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .habilidad hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .habilidad ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#habilidades .fila .habilidad p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* Seccion TECNOLOGIAS */
+
+.contenedor-tecnologias {
+    background: linear-gradient(
+        #8a2be2cc,
+        rgba(33, 16, 16, .8)
+    ), url("img/fondo-tecnologias.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contenedor-tecnologias .tecnologia {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.contenedor-tecnologias .tecnologia .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-tecnologias .tecnologia .lista {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+
+.contenedor-tecnologias .tecnologia .barra {
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+/* Barras progreso */
+
+.contenedor-tecnologias .tecnologia .barra .barra-progreso1 {
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+
+.contenedor-tecnologias .tecnologia .barra .barra-progreso2 {
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+
+.contenedor-tecnologias .tecnologia .barra .barra-progreso3 {
+    background-color: #fff;
+    width: 80%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+
+.contenedor-tecnologias .tecnologia .barra .barra-progreso4 {
+    background-color: #fff;
+    width: 75%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+
+@keyframes progreso1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progreso2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes progreso3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progreso4 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+/* Seccion PORTFOLIO */
+
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0 20px;
+    margin: auto;
+}
+
+#portfolio .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+
+    text-decoration: underline;
+    text-decoration-color: #1F0F59;
+    text-decoration-thickness: 5px;
+}
+
+#portfolio .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .fila .proyecto {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyecto .info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #F5D2E1;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/* Seccion MATERIAS CURSADAS */
+
+#materias {
+    padding: 100px 15px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+#materias .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #1F0F59;
+    text-decoration-thickness: 5px;
+    margin-bottom: 15px;
+}
+
+.subtitulo-materias {
+    color: #565656;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.materias-contenedor {
+    width: 100%;
+}
+
+#materias-cargando {
+    color: #565656;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.materias-tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow:
+        0 5px 15px rgba(31, 15, 89, 0.12);
+}
+
+.materias-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.materias-tabla th {
+    background-color: #1F0F59;
+    color: #fff;
+    padding: 14px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.materias-tabla td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
+    color: #343434;
+}
+
+.materias-tabla tbody tr:hover td {
+    background-color: #F5D2E1;
+}
+
+.estado-materia {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.estado-aprobada {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.estado-regular {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.estado-libre {
+    background-color: #e2e3e5;
+    color: #41464b;
+}
+
+.materias-error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.materias-vacio {
+    padding: 30px !important;
+    text-align: center;
+}
+
+.btn-materias {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background-color: #BE87C1;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-materias:hover {
+    background-color: #1F0F59;
+    color: #fff;
+}
+
+/* Seccion CONTACTO */
+
+#contacto {
+    padding: 35px 15px 100px;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #1F0F59;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#contacto .contenedor-form .campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #919191;
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+
+    outline: none;
+}
+
+#contacto .contenedor-form input:focus,
+#contacto .contenedor-form textarea:focus {
+    border-color: #BE87C1;
+}
+
+/* Mensaje de error */
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.8rem;
+    margin: 4px 5px 0;
+    min-height: 1rem;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+
+    transition: .5s;
+
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #BE87C1;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+
+    .redes {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    /* INICIO */
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    #inicio .contenido .presentacion h2 span {
+        font-size: 32px;
+    }
+
+
+    /* SOBRE MI */
+
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+    /* HABILIDADES */
+
+    #habilidades {
+        padding: 50px 15px;
+    }
+
+    #habilidades .fila {
+        display: block;
+    }
+
+    #habilidades .fila .habilidad {
+        margin: 10px auto;
+    }
+
+    #habilidades .fila .habilidad:hover {
+        width: auto;
+    }
+
+
+    /* TECNOLOGIAS */
+
+    .contenedor-tecnologias {
+        padding: 50px 20px;
+    }
+
+    /* PORTFOLIO */
+
+    #portfolio {
+        padding: 50px 15px;
+    }
+
+    #portfolio .fila {
+        display: block;
+    }
+
+    #portfolio .fila .proyecto {
+        margin: 10px auto;
+    }
+
+    /* MATERIAS */
+
+    #materias {
+        padding: 60px 15px;
+    }
+
+    .materias-tabla {
+        min-width: 800px;
+    }
+
+    /* CONTACTO */
+
+    #contacto {
+        padding: 50px 15px;
+    }
+
+    #contacto .contenedor-form .mitad {
+        display: block;
+    }
+
+    #contacto .contenedor-form .campo {
+        margin-bottom: 15px;
+    }
+
+}

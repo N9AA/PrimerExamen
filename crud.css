@@ -1,0 +1,438 @@
+/* Crud Bootstrap */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.92),
+            rgba(245, 210, 225, 0.90)
+        ),
+        url("img/fondo-tecnologias.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+
+.crud-header {
+    width: 100%;
+    background-color: #1F0F59;
+    border-bottom: 3px solid #BE87C1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
+}
+
+.crud-header-contenido {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.logo span {
+    color: #BE87C1;
+}
+
+.logo:hover {
+    color: #F5D2E1;
+}
+
+.crud-header nav a {
+    display: inline-block;
+    margin-left: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.crud-header nav a i {
+    margin-right: 6px;
+    color: #F5D2E1;
+}
+
+.crud-header nav a:hover {
+    color: #BE87C1;
+}
+
+/* Contenido */
+
+.crud-contenido {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    flex: 1;
+}
+
+.crud-contenido h1 {
+    color: #1F0F59;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.crud-contenido h1::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin: 10px auto 15px;
+    background-color: #BE87C1;
+    border-radius: 5px;
+}
+
+.subtitulo-crud {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Buscador */
+
+.buscador-crud form {
+    margin: 0;
+}
+
+.buscador-crud .input-group-text {
+    background-color: #fff;
+    border-color: #ced4da;
+    color: #BE87C1;
+}
+
+.buscador-crud .form-control {
+    border-color: #ced4da;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.buscador-crud .form-control:focus {
+    border-color: #BE87C1;
+    box-shadow:
+        0 0 0 0.20rem
+        rgba(190, 135, 193, 0.25);
+}
+
+.buscador-crud .btn {
+    font-size: 14px;
+}
+
+
+/* Botones */
+
+.btn-primary {
+    background-color: #BE87C1 !important;
+    border-color: #BE87C1 !important;
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #1F0F59 !important;
+    border-color: #1F0F59 !important;
+}
+
+.btn-outline-secondary {
+    border-color: #ced4da;
+    color: #6c757d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #1F0F59;
+    border-color: #1F0F59;
+    color: #fff;
+}
+
+/* Tabla */
+
+.crud-tabla {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 4px 16px
+        rgba(31, 15, 89, 0.12);
+    border:
+        1px solid
+        rgba(190, 135, 193, 0.25);
+}
+
+.crud-tabla table {
+    margin-bottom: 0;
+}
+
+.crud-tabla thead th {
+    background-color: #1F0F59;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 14px 16px;
+    border: none;
+    white-space: nowrap;
+}
+
+.crud-tabla tbody td {
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #343a40;
+    border-bottom:
+        1px solid
+        #f0e6f2;
+}
+
+.crud-tabla tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.crud-tabla tbody tr:hover td {
+    background-color:
+        rgba(190, 135, 193, 0.08);
+}
+
+/* Acciones */
+
+.actions {
+    white-space: nowrap;
+}
+
+.actions .btn {
+    margin-right: 6px;
+}
+
+.actions .btn-primary {
+    background-color: #BE87C1 !important;
+    border-color: #BE87C1 !important;
+}
+
+.actions .btn-primary:hover {
+    background-color: #1F0F59 !important;
+    border-color: #1F0F59 !important;
+}
+
+.actions .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.actions .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Estado */
+
+.badge {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+
+/* Sin materias */
+
+.sin-materias td {
+    padding: 45px 20px !important;
+    color: #6c757d;
+    text-align: center;
+}
+
+.sin-materias i {
+    display: block;
+    margin-bottom: 12px;
+    color: #BE87C1;
+    font-size: 32px;
+}
+
+/* Formularios create y edit */
+
+.crud-card {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+        0 6px 24px
+        rgba(31, 15, 89, 0.14);
+    border:
+        1px solid
+        rgba(190, 135, 193, 0.25);
+}
+
+.crud-card-header {
+    padding: 28px 24px;
+    background-color:
+        rgba(31, 15, 89, 0.04);
+    border-bottom:
+        1px solid
+        rgba(190, 135, 193, 0.18);
+}
+
+.crud-card-body {
+    padding: 28px 30px 34px;
+}
+
+.crud-form .form-label {
+    color: #1F0F59;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.crud-form .form-control,
+.crud-form .form-select {
+    border-color: #ced4da;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #212529;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.crud-form .form-control:focus,
+.crud-form .form-select:focus {
+    border-color: #BE87C1;
+    box-shadow:
+        0 0 0 0.20rem
+        rgba(190, 135, 193, 0.25);
+}
+
+.crud-form .form-control::placeholder {
+    color: #adb5bd;
+    font-size: 13px;
+}
+
+/* Botones de formularios */
+
+.crud-actions {
+    margin-top: 28px;
+}
+
+.crud-actions .btn-principal {
+    background-color: #BE87C1;
+    border-color: #BE87C1;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 26px;
+    transition: 0.3s;
+}
+
+.crud-actions .btn-principal:hover {
+    background-color: #1F0F59;
+    border-color: #1F0F59;
+    color: #fff;
+}
+
+.crud-actions .btn-secundario {
+    background-color: transparent;
+    border-color: #ced4da;
+    color: #6c757d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 26px;
+    transition: 0.3s;
+}
+
+.crud-actions .btn-secundario:hover {
+    background-color: #1F0F59;
+    border-color: #1F0F59;
+    color: #fff;
+}
+
+/* Footer */
+
+.crud-footer {
+    padding: 25px 20px;
+    color: #fff;
+    background-color: #1F0F59;
+    border-top: 3px solid #BE87C1;
+    text-align: center;
+    font-size: 13px;
+}
+
+.crud-footer span {
+    color: #F5D2E1;
+    font-weight: 600;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    .crud-header-contenido {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .crud-header nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .crud-contenido {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .crud-contenido h1 {
+        font-size: 26px;
+    }
+
+    .crud-tabla {
+        overflow-x: auto;
+    }
+
+    .crud-tabla table {
+        min-width: 850px;
+    }
+
+    .crud-card {
+        margin: 0 15px;
+    }
+
+    .crud-card-body {
+        padding: 22px 20px 28px;
+    }
+
+    .crud-actions {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .crud-actions .btn {
+        width: 100%;
+    }
+}

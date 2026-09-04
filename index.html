@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Alejandra Noelia Arratia Desarrollo Web</title>
+</head>
+
+<body>
+<!-- SECCION INICIO -->
+
+<section id="inicio">
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <h1>AA</h1>
+                <nav id="nav" class="">
+                    <ul id="links">
+                        <li>
+                            <a href="#inicio"
+                               class="seleccionado"
+                               onclick="seleccionar(this)">
+                                INICIO
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#sobremi"
+                               onclick="seleccionar(this)">
+                                SOBRE MI
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#habilidades"
+                               onclick="seleccionar(this)">
+                                HABILIDADES
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#portfolio"
+                               onclick="seleccionar(this)">
+                                PORTFOLIO
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#materias"
+                               onclick="seleccionar(this)">
+                                MATERIAS CURSADAS
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contacto"
+                               onclick="seleccionar(this)">
+                                CONTACTO
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- Iconos del menu responsive -->
+
+                <div id="icono-nav"
+                     onclick="responsiveMenu()">
+
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- Iconos de las redes sociales -->
+
+                <div class="redes">
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="presentacion">
+            <p class="bienvenida">
+                Bienvenido
+            </p>
+            <h2>
+                Soy
+                <span>Alejandra Noelia Arratia</span>,
+                estudiante de Informática
+            </h2>
+            <p class="descripcion">
+                Licenciatura en Análisis de Sistemas y
+                Tecnicatura Universitaria en Programación.
+            </p>
+            <a href="#portfolio">
+                Ir a Portafolio
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCION SOBRE MI -->
+
+<section id="sobremi">
+    <div class="contenedor-foto">
+        <img src="img/foto.png"
+             alt="Foto de Alejandra">
+    </div>
+
+    <div class="sobremi">
+        <p class="titulo-seccion">
+            Sobre Mí
+        </p>
+        <h2>
+            Hola, soy
+            <span>Alejandra Noelia Arratia</span>
+        </h2>
+        <h3>
+            Estudiante de Licenciatura en Análisis de Sistemas
+            y Tecnicatura Universitaria en Programación
+        </h3>
+        <p>
+            Soy una estudiante apasionada por la tecnología,
+            los idiomas, el diseño y la resolución de problemas
+            mediante la lógica y el análisis. Me gusta aprender
+            constantemente y mejorar mis habilidades.
+        </p>
+        <p>
+            Actualmente me encuentro desarrollando proyectos
+            académicos y personales donde aplico lo aprendido
+            en la universidad, buscando siempre crear soluciones
+            útiles y funcionales.
+        </p>
+        <a href="#contacto">
+            Contactarme
+        </a>
+    </div>
+</section>
+
+
+<!-- SECCION HABILIDADES -->
+
+<section id="habilidades">
+    <h3 class="titulo-seccion">
+        MIS HABILIDADES
+    </h3>
+    <div class="fila">
+        <div class="habilidad">
+            <span class="icono">
+                <i class="fa-solid fa-diagram-project"></i>
+            </span>
+            <h4>
+                Análisis y Diseño de Sistemas
+            </h4>
+            <hr>
+            <ul class="habilidades-tag">
+                <li>
+                    UML
+                </li>
+
+                <li>
+                    Requerimientos
+                </li>
+
+                <li>
+                    Procesos
+                </li>
+
+            </ul>
+            <p>
+                Análisis de requerimientos, modelado de procesos
+                y diseño de soluciones para sistemas informáticos.
+            </p>
+        </div>
+
+        <div class="habilidad">
+            <span class="icono">
+                <i class="fa-solid fa-database"></i>
+            </span>
+            <h4>
+                Bases de Datos
+            </h4>
+            <hr>
+            <ul class="habilidades-tag">
+                <li>
+                    SQL
+                </li>
+                <li>
+                    Modelado
+                </li>
+                <li>
+                    Normalización
+                </li>
+            </ul>
+            <p>
+                Diseño y modelado de bases de datos, relaciones
+                entre entidades, normalización y organización
+                de la información.
+            </p>
+        </div>
+
+        <div class="habilidad">
+            <span class="icono">
+                <i class="fa-solid fa-palette"></i>
+            </span>
+            <h4>
+                Diseño Digital
+            </h4>
+            <hr>
+            <ul class="habilidades-tag">
+                <li>
+                    UX/UI
+                </li>
+
+                <li>
+                    Web
+                </li>
+
+                <li>
+                    Redes
+                </li>
+            </ul>
+            <p>
+                Diseño de interfaces y experiencias de usuario,
+                diseño web, piezas gráficas y contenido visual
+                para redes sociales.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCION TECNOLOGIAS -->
+
+<div class="contenedor-tecnologias"
+     id="tecnologias">
+    <h3>
+        TECNOLOGIAS
+    </h3>
+
+    <div class="tecnologia">
+        <div class="info">
+            <p>
+                <span class="lista"></span>
+                Canva
+            </p>
+            <span class="porcentaje">
+                90%
+            </span>
+        </div>
+
+        <div class="barra">
+            <div id="canva"
+                 class="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tecnologia">
+        <div class="info">
+            <p>
+                <span class="lista"></span>
+                Figma
+            </p>
+            <span class="porcentaje">
+                85%
+            </span>
+        </div>
+
+        <div class="barra">
+            <div id="figma"
+                 class="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tecnologia">
+        <div class="info">
+            <p>
+                <span class="lista"></span>
+                SQL
+            </p>
+            <span class="porcentaje">
+                80%
+            </span>
+        </div>
+
+        <div class="barra">
+            <div id="sql"
+                 class="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tecnologia">
+        <div class="info">
+            <p>
+                <span class="lista"></span>
+                Wordpress
+            </p>
+            <span class="porcentaje">
+                75%
+            </span>
+        </div>
+
+        <div class="barra">
+            <div id="wordpress"
+                 class="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SECCION PORTAFOLIO -->
+
+<section id="portfolio">
+    <h3 class="titulo-seccion">
+        MIS PROYECTOS
+    </h3>
+
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto1.png"
+                 alt="Graph Colouring Studio">
+            <div class="info">
+                <h4>
+                    Graph Colouring Studio
+                </h4>
+                <p>
+                    Aplicación de algoritmos para el problema
+                    de coloreo de grafos
+                </p>
+            </div>
+        </div>
+
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto2.png"
+                 alt="Nutri Delicias">
+            <div class="info">
+                <h4>
+                    Nutri Delicias
+                </h4>
+                <p>
+                    Sitio web de recetas de cocina saludables
+                </p>
+            </div>
+        </div>
+
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto3.png"
+                 alt="Diseño UX/UI">
+            <div class="info">
+                <h4>
+                    Diseño UX/UI
+                </h4>
+                <p>
+                    Reporte UX/UI para el desarrollo de una
+                    nueva aplicación de cocina
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCION MATERIAS CURSADAS -->
+
+<section id="materias">
+    <h3 class="titulo-seccion">
+        MATERIAS CURSADAS
+    </h3>
+    <p class="subtitulo-materias">
+        Materias registradas en mi trayectoria académica
+    </p>
+
+    <div class="materias-contenedor">
+        <div id="materias-cargando">
+            Cargando materias...
+        </div>
+
+        <div class="materias-tabla-contenedor">
+            <table class="materias-tabla">
+                <thead>
+                    <tr>
+                        <th>
+                            Materia
+                        </th>
+                        <th>
+                            Año de carrera
+                        </th>
+                        <th>
+                            Nota
+                        </th>
+                        <th>
+                            Año de cursada
+                        </th>
+                        <th>
+                            Año de aprobación
+                        </th>
+                        <th>
+                            Estado
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="materias-body">
+                </tbody>
+            </table>
+        </div>
+
+
+        <div id="materias-error"
+             class="materias-error">
+        </div>
+
+
+        <a href="http://localhost:8081/primerparcial/public/index.php?action=index"
+           class="btn-materias">
+            <i class="fa-solid fa-gear"></i>
+            ADMINISTRAR MATERIAS
+        </a>
+    </div>
+</section>
+
+
+<!-- SECCION CONTACTO -->
+
+<section id="contacto">
+    <h3 class="titulo-seccion">
+        Contáctame
+    </h3>
+
+    <div class="contenedor-form">
+        <form id="formulario"
+              action="contacto.php"
+              method="POST">
+            <div class="fila mitad">
+                <div class="campo">
+                    <input type="text"
+                           id="nombre"
+                           name="nombre"
+                           placeholder="Nombre Completo"
+                           class="input-mitad">
+                </div>
+
+                <div class="campo">
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Dirección de Email"
+                           class="input-mitad">
+                </div>
+            </div>
+
+
+            <div class="fila">
+                <div class="campo">
+                    <input type="text"
+                           id="tema"
+                           name="asunto"
+                           placeholder="Tema..."
+                           class="input-full">
+                </div>
+            </div>
+
+
+            <div class="fila">
+                <div class="campo">
+                    <textarea id="mensaje"
+                              name="mensaje"
+                              cols="30"
+                              rows="10"
+                              placeholder="Tu Mensaje..."
+                              class="input-full"></textarea>
+                </div>
+            </div>
+
+
+            <input type="submit"
+                   value="Enviar Mensaje"
+                   class="btn-enviar">
+        </form>
+    </div>
+</section>
+
+
+<!-- SECCION FOOTER -->
+
+<footer>
+    <p>
+        © Todos los derechos reservados - 2026
+    </p>
+    <div class="redes">
+        <a href="https://www.linkedin.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fa-brands fa-square-facebook"></i>
+        </a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
