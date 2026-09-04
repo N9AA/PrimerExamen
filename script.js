@@ -240,7 +240,7 @@ async function cargarMaterias() {
         // Conectar con la API PHP
         const respuesta =
             await fetch(
-                "http://localhost:8081/primerparcial/api/materias.php"
+                "/primerparcial/api/materias.php"
             );
         // Verificar la respuesta
         if (!respuesta.ok) {
